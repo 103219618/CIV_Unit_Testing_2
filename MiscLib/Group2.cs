@@ -20,27 +20,70 @@ namespace MiscLib
                 return true;
             }
             return false;
-
         }
 
         public int FarenheitToCelcius(int farenheit)
-        {
-            throw new NotImplementedException();
+        {   
+            double faren = Convert.ToDouble(farenheit);
+            double celsius = (faren - 32) * 5 / 9;
+            celsius = Math.Round(celsius);
+            int cel = Convert.ToInt32(celsius);
+            return cel;
         }
 
         public bool CheckWhiteSpace(string word)
         {
-            throw new NotImplementedException();
+            int numberOfSpaces = 0;
+            for (int i = 0; i < word.Length; i++)
+            {
+                if (word[i] == ' ')
+                {
+                    numberOfSpaces++;
+                }
+
+            }
+            if (numberOfSpaces >= 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public string CamelString(string word)
         {
-            throw new NotImplementedException();
+            string ConvertWord = string.Empty;
+            for (int i = 0; i < word.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    ConvertWord = ConvertWord + word[i].ToString().ToUpper();
+                }
+                else
+                {
+                    ConvertWord = ConvertWord + word[i].ToString().ToLower();
+                }
+            }
+            return ConvertWord;
         }
 
         public int CountDigits(string word)
         {
-            throw new NotImplementedException();
+            int i = 0;
+            int l = word.Length;
+            int digit = 0;
+            while (i < l)
+            {
+                if (word[i] >= '0' && word[i] <= '9')
+                {
+                    digit++;
+                }
+
+                i++;
+            }
+            return digit;
         }
 
 
