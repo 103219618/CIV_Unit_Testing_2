@@ -32,33 +32,33 @@ namespace MiscLib
                 {
                     return false;
                 }
-
             }
             return false;
         }
 
+        public int CelciusToFarenheit(int celcius)
+        {
+            {
+                int Farenheit = ((celcius * 9 / 5) + 32);
+                return Farenheit;
+            }
+        }
+
+        public bool IsPalindrome(string word)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string StringReplace(string word, char replaceChar, char replacement)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int CharCount(string word, char countCharacter)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
-
-    public int CelciusToFarenheit(int celcius)
-    {
-        throw new NotImplementedException();
-    }
-
-    public bool IsPalindrome(string word)
-    {
-        throw new NotImplementedException();
-    }
-
-    public string StringReplace(string word, char replaceChar, char replacement)
-    {
-        throw new NotImplementedException();
-    }
-
-    public int CharCount(string word, char countCharacter)
-    {
-        throw new NotImplementedException();
-    }
-
-
-}
 }
