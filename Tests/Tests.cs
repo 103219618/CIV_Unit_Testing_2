@@ -7,6 +7,9 @@ namespace Tests
     public class MiscLibTests
     {
         // Write Unit Tests for all functions for your assigned group
+
+        // GROUP 2
+    
         GroupTwoFunctions x = new GroupTwoFunctions();
 
         // 1.  Method receives the two sides of a Rectangle and return the perimeter
