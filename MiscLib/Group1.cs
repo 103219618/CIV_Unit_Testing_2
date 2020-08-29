@@ -72,9 +72,13 @@ namespace MiscLib
 
         public int CharCount(string word, char countCharacter)
         {
-            throw new NotImplementedException();
+            int digitsCount = 0;
+            foreach (char c in word)
+            {
+                if (c == countCharacter)
+                    digitsCount++;
+            }
+            return digitsCount;
         }
-
-
     }
 }
