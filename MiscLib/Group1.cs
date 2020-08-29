@@ -5,30 +5,46 @@ namespace MiscLib
     public class GroupOneFunctions
     {
         //---- Group 1 Functions ----------
-        public int CalcRectArea(int length, int width) {
+        public int CalcRectArea(int length, int width)
+        {
+            {
+                if ((length > 0) & (width > 0))
+                {
+                    int RESULT = 2 * (length + width);
+                    return RESULT;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+        }
+
+        public bool IsFactiorialNum(int num)
+        {
             throw new NotImplementedException();
         }
 
-        public bool IsFactiorialNum(int num) {
+        public int CelciusToFarenheit(int celcius)
+        {
             throw new NotImplementedException();
         }
 
-        public int CelciusToFarenheit(int celcius) {
+        public bool IsPalindrome(string word)
+        {
             throw new NotImplementedException();
         }
 
-        public bool IsPalindrome(string word) {
+        public string StringReplace(string word, char replaceChar, char replacement)
+        {
             throw new NotImplementedException();
         }
 
-        public string StringReplace(string word, char replaceChar, char replacement) {
+        public int CharCount(string word, char countCharacter)
+        {
             throw new NotImplementedException();
         }
 
-        public int CharCount(string word, char countCharacter) {
-            throw new NotImplementedException();
-        }
 
-        
     }
 }
