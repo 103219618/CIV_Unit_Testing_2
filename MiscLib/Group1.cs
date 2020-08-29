@@ -46,13 +46,29 @@ namespace MiscLib
 
         public bool IsPalindrome(string word)
         {
-            throw new NotImplementedException();
+            string first = word.Substring(0, word.Length / 2);
+            Char[] array = word.ToCharArray(0, word.Length);
+            Array.Reverse(array);
+            string reverseword = array.ToString();
+            string second = reverseword.Substring(0, reverseword.Length / 2);
+            return first.Equals(second);
         }
 
         public string StringReplace(string word, char replaceChar, char replacement)
         {
-            throw new NotImplementedException();
+            Char[] arrays = word.ToCharArray(0, word.Length);
+            if (Array.Exists(arrays, element => element == replaceChar) == false)
+            {
+                return "The char doesn't exit in the string";
+            }
+            else
+            {
+                arrays[Array.IndexOf(arrays, replaceChar)] = replacement;
+                string newword = arrays.ToString();
+                return newword;
+            }
         }
+
 
         public int CharCount(string word, char countCharacter)
         {
