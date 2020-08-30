@@ -10,8 +10,8 @@ namespace MiscLib
             {
                 if ((length > 0) & (width > 0))
                 {
-                    int RESULT = 2 * (length + width);
-                    return RESULT;
+                    int area = 2 * (length + width);
+                    return area;
                 }
                 else
                 {
@@ -39,8 +39,8 @@ namespace MiscLib
         public int CelciusToFarenheit(int celcius)
         {
             {
-                int Farenheit = ((celcius * 9 / 5) + 32);
-                return Farenheit;
+                int farenheit = (celcius * 9 / 5) + 32;
+                return farenheit;
             }
         }
 
@@ -59,7 +59,7 @@ namespace MiscLib
             Char[] arrays = word.ToCharArray(0, word.Length);
             if (Array.Exists(arrays, element => element == replaceChar) == false)
             {
-                return "The char doesn't exit in the string";
+                return "Character not found in a String!";
             }
             else
             {
